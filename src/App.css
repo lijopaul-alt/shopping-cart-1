@@ -1,0 +1,351 @@
+.login {
+  padding: 0 2rem;
+  min-height: 100vh;
+  background: linear-gradient(115deg, #ff9797 0%, #0f0068 100%),
+    linear-gradient(245deg, #a8ffe5 0%, #0500ff 100%),
+    radial-gradient(100% 225% at 100% 0%, #ff003d 0%, #000000 100%),
+    radial-gradient(
+      90% 160% at 0% 100%,
+      #e42c64 0%,
+      #e42c64 30%,
+      #614ad3 calc(30% + 1px),
+      #614ad3 60%,
+      #2d248a calc(60% + 1px),
+      #2d248a 70%,
+      #121b74 calc(70% + 1px),
+      #121b74 100%
+    ),
+    linear-gradient(
+      100deg,
+      #48466f 9%,
+      #48466d 35%,
+      #3d84a8 calc(35% + 1px),
+      #3d84a8 65%,
+      #46cdcf calc(65% + 1px),
+      #46cdcf 70%,
+      #abedd8 calc(70% + 1px),
+      #abedd8 100%
+    );
+  background-blend-mode: overlay, overlay, overlay, overlay, normal;
+}
+
+.login__container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.column__one h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 5rem;
+  width: 50vw;
+}
+
+.column__one p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6rem;
+  width: 40vw;
+  margin: 2rem 0;
+  line-height: 1.4;
+}
+
+.column__one button {
+  padding: 1rem 2em;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #0500ff;
+  transition: all.2s ease;
+  background-color: #fff;
+}
+
+.column__one button:hover {
+  background-color: #0500ff;
+  color: #fff;
+}
+
+.column__two .column__twoImg {
+  width: 50rem;
+}
+
+.login__wrapper {
+  max-width: 114rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__wrapper h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.login__form {
+  width: 40rem;
+  max-width: 90%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.login__wrapper span {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.login__form label {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.login__form input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  border: 1px solid #0500ff;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.login__form button {
+  padding: 1rem 2em;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-color: #0500ff;
+  transition: all.2s ease;
+  color: #fff;
+}
+
+.nav {
+  padding: 2rem;
+  background-color: #0500ff;
+}
+
+.nav__container {
+  max-width: 114rem;
+  margin: 0% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list li:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.navbar__logo--icon {
+  font-size: 3rem;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.navbar__logo--text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar__cart {
+  color: #fff;
+  position: relative;
+}
+
+.navbar__cart--icon {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar__cart--count {
+  position: absolute;
+  top: -40%;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.products {
+  padding: 4rem 2rem;
+}
+
+.products__container {
+  max-width: 114rem;
+  margin: 0 auto;
+  align-items: center;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.507);
+  border-radius: 0.4rem;
+  min-height: 40rem;
+}
+
+.product button {
+  padding: 1rem 3rem;
+  background-color: #0500ff;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+}
+
+.product__cat {
+  color: #333;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.product__img {
+  width: 90%;
+  max-width: 12rem;
+}
+
+.product__title {
+  font-size: 1.6rem;
+  color: #333;
+  width: 30rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.product__price {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.productDetail {
+  margin-top: 4rem;
+}
+
+.productDetail__container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productDetail__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.productDetail__img {
+  width: 90%;
+  max-width: 14rem;
+  margin-bottom: 1rem;
+}
+
+.productDetail__cat {
+  color: #333;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.productDetail__title {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.productDetail__price {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.productDetail__content button {
+  padding: 1rem 3rem;
+  background-color: #0500ff;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+}
+
+.goback {
+  background-color: #fff;
+  box-shadow: 2px 4px 5px rgba(17, 17, 17, 0.466);
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem;
+  position: absolute;
+  border-radius: 0.6rem;
+  top: 13%;
+  left: 4%;
+  text-decoration: none;
+}
+
+.card {
+  padding: 4rem 2rem;
+}
+
+.cart__container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__logo {
+  text-decoration: none;
+  outline: none;
+}
