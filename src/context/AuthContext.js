@@ -4,7 +4,7 @@ export const AuthContext = createContext();
 
 function AuthProvider(props) {
   const user = {
-    userName: "lijopaul",
+    userName: "Lijopaul",
     password: "1999",
   };
 
